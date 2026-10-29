@@ -1,3 +1,5 @@
+- Contributor validation (2026-10-29, issue #1944): scoped descendant cancellation and pre-spawn deadline validation. Windows regressions and a three-version malformed-timeout comparison pass; full Linux/Go/Rust/corpus/differential and upstream CI remain required. Original report: @linkinsider-work; compare the alternative in #1945.
+
 # Hybrid Language: Development Plan
 
 - Contributor amendment (2026-10-19, #656): current main already rejects direct pointer-receiver calls on map reads, call results, and literals. Apply its existing addressability rule when selecting method values and task callees too, preserving all other receiver rules. Regression suite covers the two residual defects and addressable controls (19 tests); full workspace/corpus/differential and CI verification remain delivery gates.
